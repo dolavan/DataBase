@@ -10,7 +10,7 @@ Cadastro:
 -Nome(texto)
 -nascimento(Data dd/mm/aaaa)
 -sexo(numero)
--endereço rua cidade estado
+-endereÃ§o rua cidade estado
 -Telefones
 
 *dados Remedio:
@@ -30,15 +30,15 @@ CREATE DATABASE dbsistemaNT;
 CREATE TABLE tb_Clientes (
      cpfCliente INT PRIMARY KEY NOT NULL,
      nomeCliente VARCHAR(50) NOT NULL, --Campo Obrigatorio
-	 nascCliente DATE, --Não obrigatorio
+	 nascCliente DATE, --NÃ£o obrigatorio
 	 sexoCliente VARCHAR(1),
-	 endçCliente VARCHAR(50),
+	 endÃ§Cliente VARCHAR(50),
 	 cidaCliente VARCHAR(50),
 	 estdCliente VARCHAR(50),
 	 tellCliente VARCHAR(20)
 
 );
-INSERT INTO tb_Clientes (cpfCliente, nomeCliente, sexoCliente, nascCliente, endçCliente, cidaCliente, estdCliente, tellCliente) VALUES ('237.305.558-98', 'Dolavan Gomes Silva', 'M', '02/11/1997', 'santa rita', 'São Paulo', 'SP', '(11)95876-2657');
+INSERT INTO tb_Clientes (cpfCliente, nomeCliente, sexoCliente, nascCliente, endÃ§Cliente, cidaCliente, estdCliente, tellCliente) VALUES ('000.000.000-00', 'Dolavan Gomes Silva', 'M', '02/11/1997', 'santa rita', 'SÃ£o Paulo', 'SP', '(11)95876-0000');
 --Criando tabela Remedios = Produtos
 CREATE TABLE tb_Remedio (
      cdRemedio INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
